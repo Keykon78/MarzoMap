@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { Button, ConfigProvider, theme } from 'antd';
+import MapComponent from './components/MapComponent';
 
 
 
@@ -16,8 +17,12 @@ const App: React.FC = () => {
   
   return (
     
-  <ConfigProvider theme={{ token: { colorPrimary: primary} }}>
-    <Button type='primary'>Moin</Button>
+  <ConfigProvider theme={{ token: { colorPrimary: primary}, components: { Button: {defaultColor: primary, defaultShadow: "0 4px 2px rgba(0, 0, 0, 0.2)", defaultBorderColor:"#ffffff", fontWeight:700} } }}>
+    
+    <div>
+    <MapComponent primaryColor={primary}/>
+    
+    </div>
     
   </ConfigProvider>
   
