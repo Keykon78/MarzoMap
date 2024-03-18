@@ -17,7 +17,7 @@ return(
     transition={{duration:1}}
         style={{display:"flex",flexDirection:"column", position:"absolute", height:"100%", width:"100%", backgroundColor:"red"}}>
         
-    <MapComponent primaryColor={props.primaryColor}/>
+   {/* <MapComponent primaryColor={props.primaryColor}/> */}
     <div
         
         style={{display:"flex",flexDirection:"column", position:"absolute", height:"100%", width:"100%", backgroundColor:"rgba(0,0,0,0.2)",}}>
