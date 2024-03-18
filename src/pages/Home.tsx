@@ -4,15 +4,23 @@ import logo from '../assets/Logo.png'
 import { PlusOutlined, SearchOutlined } from '@ant-design/icons';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import MapComponent from '../components/MapComponent';
-
+import {delay, motion} from 'framer-motion'
 
 const Home = (props:{primaryColor:string}) => {
     const navigate = useNavigate();
     
 return(
-    <div>
+    
+    <motion.div 
+    
+    exit={{height:"0%"}}
+    transition={{duration:1}}
+        style={{display:"flex",flexDirection:"column", position:"absolute", height:"100%", width:"100%", backgroundColor:"red"}}>
+        
     <MapComponent primaryColor={props.primaryColor}/>
-    <div style={{display:"flex",flexDirection:"column", position:"absolute", height:"100%", width:"100%", backgroundColor:"rgba(0,0,0,0.2)",}}>
+    <div
+        
+        style={{display:"flex",flexDirection:"column", position:"absolute", height:"100%", width:"100%", backgroundColor:"rgba(0,0,0,0.2)",}}>
             
             <img width={200} src={logo} style={{alignSelf:"center"}}/>
             <div style={{display:"flex",flexDirection:"column", position:"absolute", bottom:50, width:200, alignSelf:"center"}}>
@@ -22,7 +30,7 @@ return(
             
             
         </div>
-        </div>
+    </motion.div>
 );
     
 }
