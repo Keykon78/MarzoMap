@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import Add from '../pages/Add';
 import { useGlobalContext } from './GlobalContext';
 import { AnimatePresence } from 'framer-motion';
+import Name from '../pages/Name';
 
 
 const AnimatedRoutes = () => {
@@ -17,6 +18,7 @@ const AnimatedRoutes = () => {
         <Routes location={location} key={location.pathname}>
             <Route path='/' element={<Home primaryColor={primary}/>}/> 
             <Route path='/Add/' element={<Add/>}/>
+            <Route path ='/Add/Name/' element={<Name/>}/>
         </Routes>
         </AnimatePresence>
         </div>
