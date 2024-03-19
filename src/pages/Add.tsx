@@ -3,7 +3,7 @@ import {delay, motion} from 'framer-motion'
 import ColorButton from '../components/ColorButton';
 import { Link } from 'react-router-dom';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
-import User from '../components/User';
+import { Button } from 'antd';
 
 const Add = () => {
     const hexColors = ['#fa8c16','#fadb14','#52c41a',"#f5222d", "#722ed1","#1677ff"];  
@@ -27,7 +27,6 @@ const Add = () => {
         
         
         <h1 style={{fontSize:55, marginLeft:10, alignSelf:"center"}}>What was your color group?</h1>
-       
         <div style={{alignSelf:"center"}}>
         {ColorButtons}
         </div>
