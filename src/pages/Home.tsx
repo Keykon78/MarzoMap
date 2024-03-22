@@ -3,7 +3,7 @@ import { Button, ConfigProvider, theme } from 'antd';
 import logo from '../assets/Logo.png'
 import { PlusOutlined, SearchOutlined } from '@ant-design/icons';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import MapComponent from '../components/MapComponent';
+import MapComponent from '../components/MapComponentOld';
 import {delay, motion} from 'framer-motion'
 
 const Home = (props:{primaryColor:string}) => {

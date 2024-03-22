@@ -18,7 +18,7 @@ const Name = () => {
 
    const [input, setInput] = useState("");
 
-   const userData = new User("",location.state.color,"","","")
+   const userData = new User("",location.state.color, undefined, undefined,undefined)
 
     
     return (

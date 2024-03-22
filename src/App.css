@@ -1,5 +1,8 @@
 html, body {
-  overflow: hidden;
+  
+    -webkit-overflow-scrolling: none;
+    overflow: hidden;
+    overscroll-behavior: none;
 }
 .route-transition {
   transition: opacity 0.3s ease-in;

@@ -6,6 +6,8 @@ import { useGlobalContext } from './GlobalContext';
 import { AnimatePresence } from 'framer-motion';
 import Name from '../pages/Name';
 import Social from '../pages/Social';
+import Position from '../pages/Position';
+import MapAdd from '../pages/MapAdd';
 
 
 const AnimatedRoutes = () => {
@@ -21,6 +23,8 @@ const AnimatedRoutes = () => {
             <Route path='/Add/' element={<Add/>}/>
             <Route path ='/Add/Name/' element={<Name/>}/>
             <Route path ='/Add/Social/' element={<Social/>}/>
+            <Route path ='/Add/Position/' element={<Position/>}/>
+            <Route path ='/Add/MapAdd/' element={<MapAdd/>}/>
         </Routes>
         </AnimatePresence>
         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { Button, ConfigProvider, theme } from 'antd';
-import MapComponent from './components/MapComponent';
+import MapComponent from './components/MapComponentOld';
 import logo from './assets/Logo.png'
 import { PlusOutlined, SearchOutlined } from '@ant-design/icons';
 import { BrowserRouter } from 'react-router-dom';
